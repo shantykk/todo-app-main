@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="todo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sun/Moon Toggle -->
+        <div class="theme-toggle">
+            <i class="fas fa-sun" id="theme-icon"></i>
+        </div>
+
+        <!-- TODO Header -->
+        <h1 class="title">Keith's Todo List</h1>
+
+        <!-- Input Section -->
+        <div class="input-container">
+            <div class="input-wrapper">
+                <div class="input-check"></div>
+                <input type="text" id="todo-input" placeholder=" type here " class="todo-input">
+            </div>
+        </div>
+
+        <!-- Todo List -->
+        <div class="todo-list" id="todo-list">
+            <!-- Sample todos -->
+            <div class="todo-item completed">
+                <div class="todo-check checked">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span class="todo-text">Set Up My SQL</span>
+                <button class="delete-btn"></button>
+            </div>
+            
+            <div class="todo-item">
+                <div class="todo-check"></div>
+                <span class="todo-text">Scroll Through LinkedIn For Updates</span>
+                <button class="delete-btn"></button>
+            </div>
+            
+            <div class="todo-item">
+                <div class="todo-check"></div>
+                <span class="todo-text">Go For Basketball Scrimmage</span>
+                <button class="delete-btn"></button>
+            </div>
+            
+            <div class="todo-item">
+                <div class="todo-check"></div>
+                <span class="todo-text">Take Shaggy For a Walk</span>
+                <button class="delete-btn"></button>
+            </div>
+            
+            <div class="todo-item">
+                <div class="todo-check"></div>
+                <span class="todo-text">Go For the evening Walk</span>
+                <button class="delete-btn"></button>
+            </div>
+            
+            <div class="todo-item">
+                <div class="todo-check"></div>
+                <span class="todo-text">Finish My Todo Project</span>
+                <button class="delete-btn"></button>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-container">
+            <div class="filter-info">
+                <span id="items-left">5 items left</span>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="clear-container">
+                <button class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+
+        <!-- Drag and Drob -->
+        <p class="drag-info">Drag and drop to reorder list</p>
+    </div>
+
+    
+</body>
+</html>
